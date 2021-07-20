@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,10 @@
 		7C62984C26A4D7D000E6C482 /* ExerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C62984A26A4D7D000E6C482 /* ExerciseTableViewCell.xib */; };
 		7C62985C26A4E5CE00E6C482 /* ExerciseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62985A26A4E5CE00E6C482 /* ExerciseCollectionViewCell.swift */; };
 		7C62985D26A4E5CE00E6C482 /* ExerciseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C62985B26A4E5CE00E6C482 /* ExerciseCollectionViewCell.xib */; };
+		7C62986F26A7492400E6C482 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62986E26A7492300E6C482 /* LanguageViewController.swift */; };
+		7C62987526A74B2700E6C482 /* OptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62987326A74B2700E6C482 /* OptionCollectionViewCell.swift */; };
+		7C62987626A74B2700E6C482 /* OptionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C62987426A74B2700E6C482 /* OptionCollectionViewCell.xib */; };
+		7C62987B26A7623F00E6C482 /* DifficultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62987A26A7623F00E6C482 /* DifficultyViewController.swift */; };
 		B7EB9C192415965EF1DFD6E6 /* Pods_9jalingo_9jalingoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B77E8E5DB4592B17339679 /* Pods_9jalingo_9jalingoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +74,10 @@
 		7C62984A26A4D7D000E6C482 /* ExerciseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseTableViewCell.xib; sourceTree = "<group>"; };
 		7C62985A26A4E5CE00E6C482 /* ExerciseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCollectionViewCell.swift; sourceTree = "<group>"; };
 		7C62985B26A4E5CE00E6C482 /* ExerciseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseCollectionViewCell.xib; sourceTree = "<group>"; };
+		7C62986E26A7492300E6C482 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		7C62987326A74B2700E6C482 /* OptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		7C62987426A74B2700E6C482 /* OptionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionCollectionViewCell.xib; sourceTree = "<group>"; };
+		7C62987A26A7623F00E6C482 /* DifficultyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyViewController.swift; sourceTree = "<group>"; };
 		975E6DD9A063108E6BDBA07D /* Pods-9jalingoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9jalingoTests.release.xcconfig"; path = "Target Support Files/Pods-9jalingoTests/Pods-9jalingoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +180,8 @@
 			children = (
 				7C62985926A4E56F00E6C482 /* CollectionViewCell */,
 				7C62984826A4D78C00E6C482 /* TableViewCell */,
+				7C62986E26A7492300E6C482 /* LanguageViewController.swift */,
+				7C62987A26A7623F00E6C482 /* DifficultyViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +200,8 @@
 			children = (
 				7C62985A26A4E5CE00E6C482 /* ExerciseCollectionViewCell.swift */,
 				7C62985B26A4E5CE00E6C482 /* ExerciseCollectionViewCell.xib */,
+				7C62987326A74B2700E6C482 /* OptionCollectionViewCell.swift */,
+				7C62987426A74B2700E6C482 /* OptionCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -204,7 +216,6 @@
 				67F80335554E4560FB46901A /* Pods-9jalingoTests.debug.xcconfig */,
 				975E6DD9A063108E6BDBA07D /* Pods-9jalingoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -317,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C62981B26A385D100E6C482 /* LaunchScreen.storyboard in Resources */,
+				7C62987626A74B2700E6C482 /* OptionCollectionViewCell.xib in Resources */,
 				7C62984C26A4D7D000E6C482 /* ExerciseTableViewCell.xib in Resources */,
 				7C62981826A385D100E6C482 /* Assets.xcassets in Resources */,
 				7C62985D26A4E5CE00E6C482 /* ExerciseCollectionViewCell.xib in Resources */,
@@ -449,10 +461,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C62984B26A4D7D000E6C482 /* ExerciseTableViewCell.swift in Sources */,
+				7C62987526A74B2700E6C482 /* OptionCollectionViewCell.swift in Sources */,
 				7C62981626A385CF00E6C482 /* _jalingo.xcdatamodeld in Sources */,
 				7C62985C26A4E5CE00E6C482 /* ExerciseCollectionViewCell.swift in Sources */,
+				7C62987B26A7623F00E6C482 /* DifficultyViewController.swift in Sources */,
 				7C62981026A385CF00E6C482 /* ViewController.swift in Sources */,
 				7C62980C26A385CF00E6C482 /* AppDelegate.swift in Sources */,
+				7C62986F26A7492400E6C482 /* LanguageViewController.swift in Sources */,
 				7C62980E26A385CF00E6C482 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
