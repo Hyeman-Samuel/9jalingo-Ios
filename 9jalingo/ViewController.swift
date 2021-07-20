@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SideMenu
 
 class ViewController: UIViewController {
 
@@ -13,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var exercises: UICollectionView!
+    private let sideMenu = SideMenuNavigationController(rootViewController: UIViewController())
     private let exerciseVerticalayout : UICollectionViewFlowLayout = UICollectionViewFlowLayout()
     static let exerciseListCellIdentifier = "exercise"
     override func viewDidLoad() {
@@ -28,9 +30,15 @@ class ViewController: UIViewController {
         exercises.delegate = self
         exercises.dataSource = self
         exercises.backgroundColor = UIColor.clear
+        sideMenu.leftSide = true
+        SideMenuManager.default.leftMenuNavigationController = sideMenu
+       // SideMenuManager.default.addPanGestureToPresent(toView: view)
     }
 
-
+    @IBAction func menuButtonPressed(_ sender: Any) {
+        present(sideMenu,animated: true)
+    }
+    
 }
 
 

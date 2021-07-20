@@ -6,7 +6,8 @@ target '9jalingo' do
   use_frameworks!
 
   # Pods for 9jalingo
-
+	pod 'SideMenu'
+	
   target '9jalingoTests' do
     inherit! :search_paths
     # Pods for testing
