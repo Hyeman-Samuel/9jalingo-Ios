@@ -43,7 +43,7 @@ extension ViewController: UICollectionViewDelegate,UICollectionViewDataSource,UI
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Self.exerciseListCellIdentifier, for: indexPath) as? ExerciseCollectionViewCell else {
-                    fatalError("Unable to dequeue ReminderCell")
+                    fatalError("Unable to dequeu ReminderCell")
                 }
                 return cell
     }
