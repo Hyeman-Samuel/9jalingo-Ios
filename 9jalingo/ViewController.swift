@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view
+        
         exercises.register(UINib(nibName: "ExerciseCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: Self.exerciseListCellIdentifier)
         NavBar.layer.cornerRadius = 60;
         avatar.layer.cornerRadius = avatar.frame.height / 2;

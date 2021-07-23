@@ -79,6 +79,13 @@ extension SignupViewController{
         viewController.pageDelegate = self
           return viewController
     }
+    
+    func CreateHomePageVC() -> ViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+          // Instantiate View Controller
+        let viewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! ViewController
+          return viewController
+    }
 }
 
 
@@ -106,6 +113,12 @@ extension SignupViewController : PageDelegate{
                 currentPage = CreateEmailPageVC()
             case 4:
                 currentPage = CreatePasswordPageVC()
+            case pages+1:
+                let homePage = CreateHomePageVC()
+                homePage.modalTransitionStyle = .flipHorizontal
+                homePage.modalPresentationStyle = .fullScreen
+                present(homePage, animated: true, completion: nil)
+                //HomeViewController
             default:
                 print("problem")
             }

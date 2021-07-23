@@ -237,7 +237,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_jalingo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="_jalingo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -685,28 +685,64 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oia-TW-aLb" userLabel="Username" customClass="LingoTextView" customModule="_jalingo" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="130" width="354" height="60"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E5r-Te-z0r" userLabel="Email" customClass="MDCOutlinedTextField">
+                                        <rect key="frame" x="10" y="125" width="354" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="71h-nn-9Ih"/>
+                                            <constraint firstAttribute="height" constant="50" id="5Tb-rl-nLz"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelColor">
-                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6hf-f3-scB" userLabel="Password" customClass="MDCOutlinedTextField">
+                                        <rect key="frame" x="10" y="210" width="354" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="JY7-o0-Dx0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSp-q7-vEA">
+                                        <rect key="frame" x="10" y="300" width="354" height="55"/>
+                                        <color key="backgroundColor" red="0.49046713079999998" green="0.27708325900000003" blue="0.17432376329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="qQR-UI-sJJ"/>
+                                        </constraints>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submitButtonPressed:" destination="19O-jg-KTd" eventType="touchUpInside" id="Jaa-Ud-Wyr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yS9-Bo-LvG" userLabel="Forgot Password?">
+                                        <rect key="frame" x="125.5" y="420" width="123" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Forgot Password?">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="forgotPasswordPressed:" destination="19O-jg-KTd" eventType="touchUpInside" id="ckC-vq-Jih"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstItem="GVT-Id-5Zr" firstAttribute="top" secondItem="HSe-G6-odY" secondAttribute="bottom" constant="30" id="1oj-UF-TzU"/>
-                                    <constraint firstAttribute="trailing" secondItem="oia-TW-aLb" secondAttribute="trailing" constant="10" id="8N2-Wq-VdT"/>
-                                    <constraint firstItem="oia-TW-aLb" firstAttribute="leading" secondItem="RbF-jG-ju1" secondAttribute="leading" constant="10" id="GOq-44-NUJ"/>
+                                    <constraint firstItem="yS9-Bo-LvG" firstAttribute="centerX" secondItem="RbF-jG-ju1" secondAttribute="centerX" id="2EP-RX-7uK"/>
+                                    <constraint firstAttribute="trailing" secondItem="E5r-Te-z0r" secondAttribute="trailing" constant="10" id="2Ps-hG-22O"/>
+                                    <constraint firstItem="E5r-Te-z0r" firstAttribute="leading" secondItem="RbF-jG-ju1" secondAttribute="leading" constant="10" id="Gz1-u6-gEY"/>
+                                    <constraint firstItem="yS9-Bo-LvG" firstAttribute="top" secondItem="fSp-q7-vEA" secondAttribute="bottom" constant="65" id="Pdi-bz-pTr"/>
+                                    <constraint firstItem="6hf-f3-scB" firstAttribute="leading" secondItem="RbF-jG-ju1" secondAttribute="leading" constant="10" id="RU8-9T-uyJ"/>
                                     <constraint firstItem="GVT-Id-5Zr" firstAttribute="leading" secondItem="RbF-jG-ju1" secondAttribute="leading" constant="10" id="U7c-Nx-X4a"/>
-                                    <constraint firstItem="oia-TW-aLb" firstAttribute="top" secondItem="GVT-Id-5Zr" secondAttribute="bottom" constant="35" id="hRi-hk-czo"/>
+                                    <constraint firstAttribute="trailing" secondItem="6hf-f3-scB" secondAttribute="trailing" constant="10" id="byX-sq-Hbr"/>
+                                    <constraint firstItem="E5r-Te-z0r" firstAttribute="top" secondItem="GVT-Id-5Zr" secondAttribute="bottom" constant="30" id="lD7-WG-FpJ"/>
                                     <constraint firstItem="HSe-G6-odY" firstAttribute="top" secondItem="RbF-jG-ju1" secondAttribute="top" constant="10" id="oXt-wb-RDO"/>
+                                    <constraint firstItem="fSp-q7-vEA" firstAttribute="leading" secondItem="RbF-jG-ju1" secondAttribute="leading" constant="10" id="q7p-I6-uTd"/>
+                                    <constraint firstAttribute="trailing" secondItem="fSp-q7-vEA" secondAttribute="trailing" constant="10" id="skm-3S-AU6"/>
+                                    <constraint firstItem="fSp-q7-vEA" firstAttribute="top" secondItem="6hf-f3-scB" secondAttribute="bottom" constant="40" id="tRb-fy-MKT"/>
+                                    <constraint firstItem="6hf-f3-scB" firstAttribute="top" secondItem="E5r-Te-z0r" secondAttribute="bottom" constant="35" id="uIb-9F-76Q"/>
                                     <constraint firstAttribute="height" constant="450" id="uWs-Gd-eyZ"/>
                                     <constraint firstItem="HSe-G6-odY" firstAttribute="leading" secondItem="RbF-jG-ju1" secondAttribute="leading" constant="10" id="wLa-OJ-qvf"/>
                                 </constraints>
@@ -721,7 +757,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="usernameField" destination="oia-TW-aLb" id="Dv7-jp-gbr"/>
+                        <outlet property="EmailField" destination="E5r-Te-z0r" id="S17-gq-wm3"/>
+                        <outlet property="passwordField" destination="6hf-f3-scB" id="5t1-cy-H5U"/>
+                        <outlet property="submitButton" destination="fSp-q7-vEA" id="urD-qX-TWu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WIf-sL-wG5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

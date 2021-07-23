@@ -7,6 +7,7 @@ target '9jalingo' do
 
   # Pods for 9jalingo
 	pod 'SideMenu'
+	pod 'MaterialComponents/TextControls+OutlinedTextFields'
 	
   target '9jalingoTests' do
     inherit! :search_paths

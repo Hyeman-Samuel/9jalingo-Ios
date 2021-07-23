@@ -35,6 +35,8 @@
 		7C8B3E3826AA081D00503842 /* PageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B3E3726AA081D00503842 /* PageDelegate.swift */; };
 		7C8B3E4026AAF5B900503842 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B3E3F26AAF5B900503842 /* AuthViewController.swift */; };
 		7C8B3E4526AB02B900503842 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B3E4426AB02B900503842 /* LoginViewController.swift */; };
+		7C8B3E7626AB663900503842 /* GifPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B3E7526AB663800503842 /* GifPlayer.swift */; };
+		7C8B3E7F26AB66D500503842 /* UIImage-gif-ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B3E7E26AB66D500503842 /* UIImage-gif-ext.swift */; };
 		B7EB9C192415965EF1DFD6E6 /* Pods_9jalingo_9jalingoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B77E8E5DB4592B17339679 /* Pods_9jalingo_9jalingoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +98,8 @@
 		7C8B3E3726AA081D00503842 /* PageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDelegate.swift; sourceTree = "<group>"; };
 		7C8B3E3F26AAF5B900503842 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		7C8B3E4426AB02B900503842 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7C8B3E7526AB663800503842 /* GifPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifPlayer.swift; sourceTree = "<group>"; };
+		7C8B3E7E26AB66D500503842 /* UIImage-gif-ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-gif-ext.swift"; sourceTree = "<group>"; };
 		975E6DD9A063108E6BDBA07D /* Pods-9jalingoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9jalingoTests.release.xcconfig"; path = "Target Support Files/Pods-9jalingoTests/Pods-9jalingoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +166,8 @@
 		7C62980A26A385CF00E6C482 /* 9jalingo */ = {
 			isa = PBXGroup;
 			children = (
+				7C8B3E7D26AB66B300503842 /* Extension */,
+				7C8B3E7426AB662100503842 /* Utility */,
 				7C8B3E3626AA080300503842 /* Delegate */,
 				7C6298C826A7792600E6C482 /* Controllers */,
 				7C62984126A4B4B700E6C482 /* Views */,
@@ -255,6 +261,22 @@
 				7C8B3E3726AA081D00503842 /* PageDelegate.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		7C8B3E7426AB662100503842 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				7C8B3E7526AB663800503842 /* GifPlayer.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		7C8B3E7D26AB66B300503842 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7C8B3E7E26AB66D500503842 /* UIImage-gif-ext.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		7DA9C2E86C3C4F438BC2B72E /* Pods */ = {
@@ -513,6 +535,7 @@
 			files = (
 				7C8B3E4526AB02B900503842 /* LoginViewController.swift in Sources */,
 				7C62984B26A4D7D000E6C482 /* ExerciseTableViewCell.swift in Sources */,
+				7C8B3E7626AB663900503842 /* GifPlayer.swift in Sources */,
 				7C62987526A74B2700E6C482 /* OptionCollectionViewCell.swift in Sources */,
 				7C6298C426A7726600E6C482 /* SignupViewController.swift in Sources */,
 				7C8B3E2826A9B2EB00503842 /* AgeViewController.swift in Sources */,
@@ -520,6 +543,7 @@
 				7C8B3E3826AA081D00503842 /* PageDelegate.swift in Sources */,
 				7C8B3E2D26A9B30000503842 /* EmailViewController.swift in Sources */,
 				7C62985C26A4E5CE00E6C482 /* ExerciseCollectionViewCell.swift in Sources */,
+				7C8B3E7F26AB66D500503842 /* UIImage-gif-ext.swift in Sources */,
 				7C62987B26A7623F00E6C482 /* DifficultyViewController.swift in Sources */,
 				7C8B3E4026AAF5B900503842 /* AuthViewController.swift in Sources */,
 				7C62981026A385CF00E6C482 /* ViewController.swift in Sources */,
