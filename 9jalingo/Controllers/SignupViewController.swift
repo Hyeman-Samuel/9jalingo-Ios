@@ -24,7 +24,7 @@ class SignupViewController: UIViewController {
     
     @IBAction func backButtonPressed(_ sender: Any) {
         if(currentPageIndex == 1){
-            //back to splash screen
+            dismiss(animated: true, completion: nil)
         }
         currentPageIndex -= 1
         if let page = currentPage{
