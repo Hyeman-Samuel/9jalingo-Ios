@@ -42,5 +42,11 @@ class AuthViewController: UIViewController {
     
     @IBAction func loginBtnPressed(_ sender: Any) {
         
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+          // Instantiate View Controller
+        let viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        viewController.modalTransitionStyle = .coverVertical
+        viewController.modalPresentationStyle = .fullScreen
+            present(viewController, animated: true, completion: nil)
     }
 }

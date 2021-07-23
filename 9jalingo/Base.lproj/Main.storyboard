@@ -660,7 +660,7 @@
         <!--Login-->
         <scene sceneID="WFg-GG-rvE">
             <objects>
-                <viewController id="19O-jg-KTd" userLabel="Login" customClass="LoginViewController" customModule="_jalingo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="19O-jg-KTd" userLabel="Login" customClass="LoginViewController" customModule="_jalingo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tJv-wW-oyh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -675,27 +675,37 @@
                                             <constraint firstAttribute="width" constant="25" id="xq7-kB-J1g"/>
                                         </constraints>
                                         <state key="normal" image="backButton50px"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="19O-jg-KTd" eventType="touchUpInside" id="6er-a5-Pbe"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVT-Id-5Zr">
-                                        <rect key="frame" x="10" y="65" width="75" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="75" id="b6r-WL-MgI"/>
-                                        </constraints>
+                                        <rect key="frame" x="10" y="65" width="67.5" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oia-TW-aLb" userLabel="Username" customClass="LingoTextView" customModule="_jalingo" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="128" width="366" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oia-TW-aLb" userLabel="Username" customClass="LingoTextView" customModule="_jalingo" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="130" width="354" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="71h-nn-9Ih"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelColor">
+                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="GVT-Id-5Zr" firstAttribute="top" secondItem="HSe-G6-odY" secondAttribute="bottom" constant="30" id="1oj-UF-TzU"/>
+                                    <constraint firstAttribute="trailing" secondItem="oia-TW-aLb" secondAttribute="trailing" constant="10" id="8N2-Wq-VdT"/>
+                                    <constraint firstItem="oia-TW-aLb" firstAttribute="leading" secondItem="RbF-jG-ju1" secondAttribute="leading" constant="10" id="GOq-44-NUJ"/>
                                     <constraint firstItem="GVT-Id-5Zr" firstAttribute="leading" secondItem="RbF-jG-ju1" secondAttribute="leading" constant="10" id="U7c-Nx-X4a"/>
+                                    <constraint firstItem="oia-TW-aLb" firstAttribute="top" secondItem="GVT-Id-5Zr" secondAttribute="bottom" constant="35" id="hRi-hk-czo"/>
                                     <constraint firstItem="HSe-G6-odY" firstAttribute="top" secondItem="RbF-jG-ju1" secondAttribute="top" constant="10" id="oXt-wb-RDO"/>
                                     <constraint firstAttribute="height" constant="450" id="uWs-Gd-eyZ"/>
                                     <constraint firstItem="HSe-G6-odY" firstAttribute="leading" secondItem="RbF-jG-ju1" secondAttribute="leading" constant="10" id="wLa-OJ-qvf"/>
@@ -710,6 +720,9 @@
                             <constraint firstItem="RbF-jG-ju1" firstAttribute="top" secondItem="cGR-pI-zLV" secondAttribute="top" constant="20" id="UAR-eq-w9N"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="usernameField" destination="oia-TW-aLb" id="Dv7-jp-gbr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WIf-sL-wG5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

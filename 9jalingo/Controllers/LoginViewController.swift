@@ -9,9 +9,11 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var usernameField: LingoTextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        usernameField.setCorner(radius: 10)
+        usernameField.setBorder(width: 1, color: .systemBackground)
         // Do any additional setup after loading the view.
     }
     
@@ -26,4 +28,7 @@ class LoginViewController: UIViewController {
     }
     */
 
+    @IBAction func backButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
