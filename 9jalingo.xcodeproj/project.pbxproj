@@ -37,6 +37,7 @@
 		7C8B3E4526AB02B900503842 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B3E4426AB02B900503842 /* LoginViewController.swift */; };
 		7C8B3E7626AB663900503842 /* GifPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B3E7526AB663800503842 /* GifPlayer.swift */; };
 		7C8B3E7F26AB66D500503842 /* UIImage-gif-ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B3E7E26AB66D500503842 /* UIImage-gif-ext.swift */; };
+		7C8B3E8726AB68FD00503842 /* CongratulatoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B3E8626AB68FD00503842 /* CongratulatoryViewController.swift */; };
 		B7EB9C192415965EF1DFD6E6 /* Pods_9jalingo_9jalingoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B77E8E5DB4592B17339679 /* Pods_9jalingo_9jalingoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,7 @@
 		7C8B3E4426AB02B900503842 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7C8B3E7526AB663800503842 /* GifPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifPlayer.swift; sourceTree = "<group>"; };
 		7C8B3E7E26AB66D500503842 /* UIImage-gif-ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-gif-ext.swift"; sourceTree = "<group>"; };
+		7C8B3E8626AB68FD00503842 /* CongratulatoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulatoryViewController.swift; sourceTree = "<group>"; };
 		975E6DD9A063108E6BDBA07D /* Pods-9jalingoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9jalingoTests.release.xcconfig"; path = "Target Support Files/Pods-9jalingoTests/Pods-9jalingoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -243,6 +245,7 @@
 				7C8B3E3126A9B30C00503842 /* PasswordViewController.swift */,
 				7C8B3E3F26AAF5B900503842 /* AuthViewController.swift */,
 				7C8B3E4426AB02B900503842 /* LoginViewController.swift */,
+				7C8B3E8626AB68FD00503842 /* CongratulatoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				7C62981026A385CF00E6C482 /* ViewController.swift in Sources */,
 				7C62980C26A385CF00E6C482 /* AppDelegate.swift in Sources */,
 				7C62986F26A7492400E6C482 /* LanguageViewController.swift in Sources */,
+				7C8B3E8726AB68FD00503842 /* CongratulatoryViewController.swift in Sources */,
 				7C8B3E3226A9B30C00503842 /* PasswordViewController.swift in Sources */,
 				7C6298D026A829D500E6C482 /* LingoTextView.swift in Sources */,
 				7C62980E26A385CF00E6C482 /* SceneDelegate.swift in Sources */,
