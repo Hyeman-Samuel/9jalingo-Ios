@@ -12,7 +12,7 @@ class ExerciseCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        background.layer.cornerRadius = 30
+        background.layer.cornerRadius = 25
     }
 
 }

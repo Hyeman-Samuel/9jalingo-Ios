@@ -26,6 +26,13 @@
 		7C62987526A74B2700E6C482 /* OptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62987326A74B2700E6C482 /* OptionCollectionViewCell.swift */; };
 		7C62987626A74B2700E6C482 /* OptionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C62987426A74B2700E6C482 /* OptionCollectionViewCell.xib */; };
 		7C62987B26A7623F00E6C482 /* DifficultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62987A26A7623F00E6C482 /* DifficultyViewController.swift */; };
+		7C6298C426A7726600E6C482 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6298C326A7726600E6C482 /* SignupViewController.swift */; };
+		7C6298D026A829D500E6C482 /* LingoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6298CF26A829D500E6C482 /* LingoTextView.swift */; };
+		7C8B3E2326A9B2D000503842 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B3E2226A9B2D000503842 /* NameViewController.swift */; };
+		7C8B3E2826A9B2EB00503842 /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B3E2726A9B2EB00503842 /* AgeViewController.swift */; };
+		7C8B3E2D26A9B30000503842 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B3E2C26A9B30000503842 /* EmailViewController.swift */; };
+		7C8B3E3226A9B30C00503842 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B3E3126A9B30C00503842 /* PasswordViewController.swift */; };
+		7C8B3E3826AA081D00503842 /* PageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B3E3726AA081D00503842 /* PageDelegate.swift */; };
 		B7EB9C192415965EF1DFD6E6 /* Pods_9jalingo_9jalingoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B77E8E5DB4592B17339679 /* Pods_9jalingo_9jalingoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +85,13 @@
 		7C62987326A74B2700E6C482 /* OptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCollectionViewCell.swift; sourceTree = "<group>"; };
 		7C62987426A74B2700E6C482 /* OptionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionCollectionViewCell.xib; sourceTree = "<group>"; };
 		7C62987A26A7623F00E6C482 /* DifficultyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyViewController.swift; sourceTree = "<group>"; };
+		7C6298C326A7726600E6C482 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		7C6298CF26A829D500E6C482 /* LingoTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingoTextView.swift; sourceTree = "<group>"; };
+		7C8B3E2226A9B2D000503842 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
+		7C8B3E2726A9B2EB00503842 /* AgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
+		7C8B3E2C26A9B30000503842 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		7C8B3E3126A9B30C00503842 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		7C8B3E3726AA081D00503842 /* PageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDelegate.swift; sourceTree = "<group>"; };
 		975E6DD9A063108E6BDBA07D /* Pods-9jalingoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-9jalingoTests.release.xcconfig"; path = "Target Support Files/Pods-9jalingoTests/Pods-9jalingoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +158,8 @@
 		7C62980A26A385CF00E6C482 /* 9jalingo */ = {
 			isa = PBXGroup;
 			children = (
+				7C8B3E3626AA080300503842 /* Delegate */,
+				7C6298C826A7792600E6C482 /* Controllers */,
 				7C62984126A4B4B700E6C482 /* Views */,
 				7C62980B26A385CF00E6C482 /* AppDelegate.swift */,
 				7C62980D26A385CF00E6C482 /* SceneDelegate.swift */,
@@ -178,10 +194,9 @@
 		7C62984126A4B4B700E6C482 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7C6298D426A829DE00E6C482 /* TextField */,
 				7C62985926A4E56F00E6C482 /* CollectionViewCell */,
 				7C62984826A4D78C00E6C482 /* TableViewCell */,
-				7C62986E26A7492300E6C482 /* LanguageViewController.swift */,
-				7C62987A26A7623F00E6C482 /* DifficultyViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,6 +219,36 @@
 				7C62987426A74B2700E6C482 /* OptionCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		7C6298C826A7792600E6C482 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C62986E26A7492300E6C482 /* LanguageViewController.swift */,
+				7C62987A26A7623F00E6C482 /* DifficultyViewController.swift */,
+				7C6298C326A7726600E6C482 /* SignupViewController.swift */,
+				7C8B3E2226A9B2D000503842 /* NameViewController.swift */,
+				7C8B3E2726A9B2EB00503842 /* AgeViewController.swift */,
+				7C8B3E2C26A9B30000503842 /* EmailViewController.swift */,
+				7C8B3E3126A9B30C00503842 /* PasswordViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7C6298D426A829DE00E6C482 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				7C6298CF26A829D500E6C482 /* LingoTextView.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		7C8B3E3626AA080300503842 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				7C8B3E3726AA081D00503842 /* PageDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 		7DA9C2E86C3C4F438BC2B72E /* Pods */ = {
@@ -462,13 +507,20 @@
 			files = (
 				7C62984B26A4D7D000E6C482 /* ExerciseTableViewCell.swift in Sources */,
 				7C62987526A74B2700E6C482 /* OptionCollectionViewCell.swift in Sources */,
+				7C6298C426A7726600E6C482 /* SignupViewController.swift in Sources */,
+				7C8B3E2826A9B2EB00503842 /* AgeViewController.swift in Sources */,
 				7C62981626A385CF00E6C482 /* _jalingo.xcdatamodeld in Sources */,
+				7C8B3E3826AA081D00503842 /* PageDelegate.swift in Sources */,
+				7C8B3E2D26A9B30000503842 /* EmailViewController.swift in Sources */,
 				7C62985C26A4E5CE00E6C482 /* ExerciseCollectionViewCell.swift in Sources */,
 				7C62987B26A7623F00E6C482 /* DifficultyViewController.swift in Sources */,
 				7C62981026A385CF00E6C482 /* ViewController.swift in Sources */,
 				7C62980C26A385CF00E6C482 /* AppDelegate.swift in Sources */,
 				7C62986F26A7492400E6C482 /* LanguageViewController.swift in Sources */,
+				7C8B3E3226A9B30C00503842 /* PasswordViewController.swift in Sources */,
+				7C6298D026A829D500E6C482 /* LingoTextView.swift in Sources */,
 				7C62980E26A385CF00E6C482 /* SceneDelegate.swift in Sources */,
+				7C8B3E2326A9B2D000503842 /* NameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
